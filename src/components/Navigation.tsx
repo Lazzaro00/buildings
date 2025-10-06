@@ -22,6 +22,13 @@ export default function Navigation() {
     }
   };
 
+  const menuItems = [
+    { id: 'home', label: 'Home' },
+    { id: 'portfolio', label: 'Portfolio' },
+    { id: 'testimonials', label: 'Testimonianze' },
+    { id: 'contact', label: 'Contatti' }
+  ];
+
   return (
     <motion.nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -36,20 +43,20 @@ export default function Navigation() {
           <div className={`text-xl sm:text-2xl font-bold transition-colors ${
             isScrolled ? 'text-[#9d8665]' : 'text-white'
           }`}>
-            Heritage Builders
+            Costruzioni Infinity 3.0
           </div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-6 lg:gap-8">
-            {['home', 'portfolio', 'testimonials', 'contact'].map((item) => (
+            {menuItems.map((item) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item)}
-                className={`capitalize font-medium transition-colors hover:text-[#9d8665] text-sm lg:text-base ${
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`font-medium transition-colors hover:text-[#9d8665] text-sm lg:text-base ${
                   isScrolled ? 'text-gray-800' : 'text-white'
                 }`}
               >
-                {item}
+                {item.label}
               </button>
             ))}
           </div>
@@ -76,13 +83,13 @@ export default function Navigation() {
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden mt-4 pb-4 bg-white rounded-lg shadow-lg"
           >
-            {['home', 'portfolio', 'testimonials', 'contact'].map((item) => (
+            {menuItems.map((item) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item)}
-                className="block w-full text-left px-4 py-3 capitalize font-medium text-gray-800 hover:bg-gray-100 hover:text-[#9d8665] transition-colors"
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="block w-full text-left px-4 py-3 font-medium text-gray-800 hover:bg-gray-100 hover:text-[#9d8665] transition-colors"
               >
-                {item}
+                {item.label}
               </button>
             ))}
           </motion.div>

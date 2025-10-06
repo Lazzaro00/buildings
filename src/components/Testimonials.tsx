@@ -20,34 +20,34 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: 'Sarah Johnson',
-    role: 'Homeowner',
-    content: 'Heritage Builders transformed our vision into reality. Their attention to detail and commitment to quality is unmatched. Our dream home exceeded all expectations.',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah',
+    name: 'Sofia Bianchi',
+    role: 'Proprietaria di Casa',
+    content: 'Costruzioni Infinity 3.0 ha trasformato la nostra visione in realtà. La loro attenzione ai dettagli e l\'impegno per la qualità sono ineguagliabili. La casa dei nostri sogni ha superato ogni aspettativa.',
+    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Sofia',
     projectImage: '/renders/render10.jpg'
   },
   {
     id: 2,
-    name: 'Michael Chen',
-    role: 'Business Owner',
-    content: 'The commercial space they built for us is stunning. Professional, on-time, and within budget. I highly recommend Heritage Builders for any construction project.',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Michael',
+    name: 'Marco Rossi',
+    role: 'Imprenditore',
+    content: 'Lo spazio commerciale che hanno costruito per noi è stupendo. Professionali, puntuali e nel budget. Consiglio vivamente Costruzioni Infinity 3.0 per qualsiasi progetto edilizio.',
+    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Marco',
     projectImage: '/renders/render13.jpg'
   },
   {
     id: 3,
-    name: 'Emily Rodriguez',
-    role: 'Property Developer',
-    content: 'Working with Heritage Builders has been an absolute pleasure. Their craftsmanship and dedication to excellence shine through in every project.',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Emily',
+    name: 'Giulia Ferrari',
+    role: 'Sviluppatrice Immobiliare',
+    content: 'Lavorare con Costruzioni Infinity 3.0 è stato un piacere assoluto. La loro maestria e dedizione all\'eccellenza brillano in ogni progetto.',
+    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Giulia',
     projectImage: '/renders/render15.jpg'
   },
   {
     id: 4,
-    name: 'David Martinez',
-    role: 'Architect',
-    content: 'The level of precision and care in executing our designs is remarkable. Heritage Builders brings architectural visions to life with exceptional quality.',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=David',
+    name: 'Alessandro Conti',
+    role: 'Architetto',
+    content: 'Il livello di precisione e cura nell\'esecuzione dei nostri progetti è notevole. Costruzioni Infinity 3.0 porta le visioni architettoniche alla vita con qualità eccezionale.',
+    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Alessandro',
     projectImage: '/renders/render4.jpg'
   }
 ];
@@ -64,10 +64,10 @@ export default function Testimonials() {
           className="text-center mb-8 sm:mb-12"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Client Testimonials
+            Testimonianze dei Clienti
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-            Hear what our satisfied clients have to say about their experience with Heritage Builders
+            Scopri cosa dicono i nostri clienti soddisfatti della loro esperienza con Costruzioni Infinity 3.0
           </p>
         </motion.div>
 
@@ -107,7 +107,7 @@ export default function Testimonials() {
                       <div className="order-1 md:order-2">
                         <img
                           src={testimonial.projectImage}
-                          alt="Project"
+                          alt="Progetto"
                           className="w-full h-48 sm:h-64 md:h-80 object-cover rounded-lg shadow-md"
                           loading="lazy"
                         />

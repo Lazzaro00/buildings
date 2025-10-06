@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img 
           src="/renders/render1.jpg" 
-          alt="Heritage Builders Project"
+          alt="Progetto Costruzioni Infinity 3.0"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40" />
@@ -20,7 +20,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Heritage Builders
+            Costruzioni Infinity 3.0
           </motion.h1>
           
           <motion.p
@@ -29,7 +29,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Crafting Excellence in Every Structure Since 1985
+            Eccellenza Artigianale in Ogni Struttura dal 1985
           </motion.p>
           
           <motion.div
@@ -42,7 +42,7 @@ export default function Hero() {
               onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-[#9d8665] hover:bg-[#8a7558] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              View Our Work
+              Scopri i Nostri Lavori
             </button>
           </motion.div>
         </div>

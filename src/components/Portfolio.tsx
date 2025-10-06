@@ -13,75 +13,75 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Modern Residential Complex',
-    category: 'Residential',
+    title: 'Complesso Residenziale Moderno',
+    category: 'Residenziale',
     image: '/renders/render7.jpg',
-    description: 'Contemporary living with green terraces'
+    description: 'Abitazioni contemporanee con terrazze verdi'
   },
   {
     id: 2,
-    title: 'Urban Development',
-    category: 'Commercial',
+    title: 'Sviluppo Urbano',
+    category: 'Commerciale',
     image: '/renders/render2.jpg',
-    description: 'Sustainable urban architecture'
+    description: 'Architettura urbana sostenibile'
   },
   {
     id: 3,
-    title: 'Luxury Apartments',
-    category: 'Residential',
+    title: 'Appartamenti di Lusso',
+    category: 'Residenziale',
     image: '/renders/render6.jpg',
-    description: 'Premium residential development'
+    description: 'Sviluppo residenziale premium'
   },
   {
     id: 4,
-    title: 'Green Living Complex',
-    category: 'Residential',
+    title: 'Complesso Eco-Sostenibile',
+    category: 'Residenziale',
     image: '/renders/render8.jpg',
-    description: 'Eco-friendly residential design'
+    description: 'Design residenziale ecologico'
   },
   {
     id: 5,
-    title: 'Contemporary Housing',
-    category: 'Residential',
+    title: 'Abitazioni Contemporanee',
+    category: 'Residenziale',
     image: '/renders/render9.jpg',
-    description: 'Modern architectural excellence'
+    description: 'Eccellenza architettonica moderna'
   },
   {
     id: 6,
-    title: 'Courtyard Residences',
-    category: 'Residential',
+    title: 'Residenze con Cortile',
+    category: 'Residenziale',
     image: '/renders/render14.jpg',
-    description: 'Private garden living spaces'
+    description: 'Spazi abitativi con giardino privato'
   },
   {
     id: 7,
-    title: 'Street View Development',
-    category: 'Commercial',
+    title: 'Sviluppo Vista Strada',
+    category: 'Commerciale',
     image: '/renders/render16.jpg',
-    description: 'Urban integration design'
+    description: 'Design di integrazione urbana'
   },
   {
     id: 8,
-    title: 'Terrace Living',
-    category: 'Residential',
+    title: 'Abitazioni con Terrazza',
+    category: 'Residenziale',
     image: '/renders/render11.jpg',
-    description: 'Balcony garden apartments'
+    description: 'Appartamenti con giardino sul balcone'
   },
   {
     id: 9,
-    title: 'Aerial View Complex',
-    category: 'Commercial',
+    title: 'Complesso Vista Aerea',
+    category: 'Commerciale',
     image: '/renders/render3.jpg',
-    description: 'Large-scale development'
+    description: 'Sviluppo su larga scala'
   }
 ];
 
-const categories = ['All', 'Residential', 'Commercial'];
+const categories = ['Tutti', 'Residenziale', 'Commerciale'];
 
 export default function Portfolio() {
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState('Tutti');
 
-  const filteredProjects = selectedCategory === 'All' 
+  const filteredProjects = selectedCategory === 'Tutti' 
     ? projects 
     : projects.filter(p => p.category === selectedCategory);
 
@@ -96,10 +96,10 @@ export default function Portfolio() {
           className="text-center mb-8 sm:mb-12"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Our Portfolio
+            Il Nostro Portfolio
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-            Explore our collection of exceptional projects that showcase our commitment to quality and craftsmanship
+            Esplora la nostra collezione di progetti eccezionali che dimostrano il nostro impegno per la qualità e l'artigianalità
           </p>
         </motion.div>
 
