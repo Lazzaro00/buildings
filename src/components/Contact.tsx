@@ -32,7 +32,7 @@ export default function Contact() {
               <Phone className="w-6 h-6 sm:w-8 sm:h-8" />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold mb-2">Telefono</h3>
-            <p className="text-sm sm:text-base text-gray-300">+39 02 1234 5678</p>
+            <p className="text-sm sm:text-base text-gray-300">393 928 5624</p>
           </motion.div>
 
           <motion.div
@@ -46,7 +46,7 @@ export default function Contact() {
               <Mail className="w-6 h-6 sm:w-8 sm:h-8" />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold mb-2">Email</h3>
-            <p className="text-sm sm:text-base text-gray-300 break-all">info@costruzioniinfinity3.it</p>
+            <p className="text-sm sm:text-base text-gray-300 break-all">costruzioniinfinity3.0@pec.it</p>
           </motion.div>
 
           <motion.div
@@ -60,7 +60,7 @@ export default function Contact() {
               <MapPin className="w-6 h-6 sm:w-8 sm:h-8" />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold mb-2">Sede</h3>
-            <p className="text-sm sm:text-base text-gray-300">Via dei Costruttori 123, Milano, MI 20100</p>
+            <p className="text-sm sm:text-base text-gray-300">Via Di Venere 39, Ceglie del Campo, Bari, 70129</p>
           </motion.div>
         </div>
 
@@ -72,7 +72,7 @@ export default function Contact() {
           className="text-center mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-gray-700"
         >
           <p className="text-sm sm:text-base text-gray-400">
-            © 2024 Costruzioni Infinity 3.0. Tutti i diritti riservati.
+            © 2025 Costruzioni Infinity 3.0. Tutti i diritti riservati.
           </p>
         </motion.div>
       </div>

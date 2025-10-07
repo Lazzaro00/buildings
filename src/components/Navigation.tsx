@@ -24,6 +24,7 @@ export default function Navigation() {
 
   const menuItems = [
     { id: 'home', label: 'Home' },
+    { id: 'current-project', label: 'Cantiere Attuale' },
     { id: 'portfolio', label: 'Portfolio' },
     { id: 'testimonials', label: 'Testimonianze' },
     { id: 'contact', label: 'Contatti' }
